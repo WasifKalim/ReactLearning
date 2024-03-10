@@ -1,0 +1,3 @@
+01viteReact -> learned creating vite and React project
+02counter -> learned use of useState
+customReact -> learned how a react element is build

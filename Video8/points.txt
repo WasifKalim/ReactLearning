@@ -1,0 +1,3 @@
+bgChanger -> 1. learned eventlistner which has a callback function
+	     2. setup tailwind
+	     3. ArrowFunction

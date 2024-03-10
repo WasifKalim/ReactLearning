@@ -1,0 +1,4 @@
+UseEffect -> to run if any changes occur on dependencies
+UseRef -> to take reference by hook to any element(ref={}) like copy
+UseCallback -> to keep the change in cache(optimization)
+
