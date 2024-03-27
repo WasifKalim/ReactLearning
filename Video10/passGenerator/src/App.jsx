@@ -28,9 +28,10 @@ function App() {
     // dependencies of useCallback by caching it in cherchar
   }, [length, numberAllowed, charAllowed, setPassword]);
 
+  // Copying to clipboard
   const copyPasswordToClipboard = useCallback(() => {
-    passwordRef.current?.select();
-    // passwordRef.current?.setSelectionRange(0, 33)
+    passwordRef.current?.select(); // use to show effect to client
+    // passwordRef.current?.setSelectionRange(0, 33); // hightlight the text range
     window.navigator.clipboard.writeText(password);
   }, [password])
 
@@ -55,6 +56,7 @@ function App() {
             placeholder="password"
             readOnly
             id=""
+            // use to take reference using useRef hook
             ref={passwordRef}
           />
           <button 
@@ -64,7 +66,6 @@ function App() {
           </button>
         </div>
 
-        
         <div className="flex text-sm gap-x-4">
           {/* scroll-bar */}
           <div className="flex items-center gap-x-1">
